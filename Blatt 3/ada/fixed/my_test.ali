@@ -1,0 +1,83 @@
+V "GNAT Lib v2016"
+M P W=b
+A -gnat05
+A -gnatwa
+A -gnatwl
+A -gnaty3
+A -gnatya
+A -gnatyb
+A -gnatyc
+A -gnatye
+A -gnatyf
+A -gnatyh
+A -gnatyi
+A -gnatyk
+A -gnatyl
+A -gnatym
+A -gnatyn
+A -gnatyp
+A -gnatyr
+A -gnatyt
+P ZX
+
+RN
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U my_test%b		my_test.adb		1d7f6f09 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W datums%s		datums.adb		datums.ali
+W smart_pointers%s	smart_pointers.adb	smart_pointers.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-except.ads		20160516092928 291912d5 ada.exceptions%s
+D a-ioexce.ads		20160516092926 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20160516092928 119b8fb3 ada.streams%s
+D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
+D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
+D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
+D datums.ads		20170516231730 892abc88 datums%s
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
+D my_test.adb		20170516231746 9e6a90e7 my_test%b
+D smart_pointers.ads	20170516231746 3252b6b2 smart_pointers%s
+D system.ads		20160516092930 2da59038 system%s
+D s-conca2.ads		20160516092930 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20160516092926 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092930 54135002 system.exception_table%s
+D s-ficobl.ads		20160516092932 078245e4 system.file_control_block%s
+D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
+D s-soflin.ads		20160516092928 14e1eb6c system.soft_links%s
+D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
+D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
+D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 11|3r6 14r10 16r10
+X 6 a-textio.ads
+49K13*Text_IO 471e16 11|3w10 14r14 16r14
+263U14*Put_Line 11|14s22 16s22
+X 8 datums.ads
+3K9*Datums 24e11 11|1w6
+X 11 my_test.adb
+6U11*My_Test 6b11 39l5 39t12
+9U14 Assert 9b14 10>7 11>7 18l8 18t14 23s4 25s4 28s4 35s4 37s4 38s4
+10b7 B{boolean} 13r11
+11a7 S{string} 14r42 16r44
+20p4 A{12|5P9} 25r21 27m26 27r26 28r21 30m27 30r27 33m15 33r15 35r25 38r21
+21p4 B{12|5P9} 31m27 31r27 33r12 36m13 36r13 37r21
+X 12 smart_pointers.ads
+4K9*Smart_Pointers 11|2w6 7r8 30r4 31r4 12|39e19
+5P9*Smart_Pointer 11|20r8 21r8
+8U14*Create 11|30s19 31s19
+11V13*Null_Pointer{5P9} 11|23s21 27s12
+14V13*Is_Null{boolean} 11|23s12 25s12 28s12 35s16 37s12 38s12
+18U14*Assign 11|27s4 33s4
+23U14*Release 11|36s4
+

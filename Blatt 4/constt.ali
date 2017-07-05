@@ -1,0 +1,65 @@
+V "GNAT Lib v2016"
+M P W=b
+A -O2
+A -gnatA
+A -g
+A -gnatc
+A -mtune=generic
+A -march=pentium4
+P NO ZX
+
+RN
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U constt%b		constt.adb		68253a0a OO SU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-ioexce.ads		20160516092926 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20160516092928 119b8fb3 ada.streams%s
+D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
+D constt.adb		20170613233100 5048cfde constt%b
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
+D system.ads		20160516092930 2da59038 system%s
+D s-crtl.ads		20160516092926 0ebbdb71 system.crtl%s
+D s-ficobl.ads		20160516092932 078245e4 system.file_control_block%s
+D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
+D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 5|1r6 26r7 27r7 30r10 32r10 36r10 38r10 42r10 44r10
+X 4 a-textio.ads
+49K13*Text_IO 471e16 5|1w10 26r11 27r11 30r14 32r14 36r14 38r14 42r14 44r14
+263U14*Put_Line 5|26s19 27s19 30s22 32s22 36s22 38s22 42s22 44s22
+X 5 constt.adb
+3U11*Constt 3b11 108l5 108t11
+4R9 Cell 5r34 6c9 10e17 12r25 13r29 17r38 20r16 21r16
+5P9 XCell(4R9) 9r19 16r25 18r29 22r16 23r16
+6R9 Cell
+8i10 Num{positive} 26r57 27r57 30r67 36r67
+9p10 Friend{5P9} 29r13 30r59 30r60 35r13 36r59 36r60 41r13
+12U14 TA 12b14 12>18 12l50 12t52 14s7 57s4 62s4
+12r18 X{6R9}
+13U14 TB 13b14 13=18 15l8 15t10 68s4 73s4
+13r18 X{6R9} 14r10
+16U14 TC 16b14 16>18 16l51 16t53 79s4 84s4
+16p18 X{5P9}
+17U14 TD 17b14 17^18 17l63 17t65 90s4 95s4
+17p18 X(6R9)
+18U14 TE 18b14 18=18 18l55 18t57 101s4 106s4
+18p18 X{5P9}
+20r4 A{6R9} 22r25 26r55 29r11 30r58 41r11 49r12 51m7 57r8 68m8 68r8 90m8
+. 90r8
+21r4 B{6R9} 23r25 27r55 35r11 36r58 50r12 52m7 62r8 73m8 73r8 95m8 95r8
+22p4 C{5P9} 49m7 79r8 101m8 101r8
+23p4 D{5P9} 41r22 50m7 51r16 84r8 106m8 106r8
+25U14 Print 25b14 46l8 46t13 56s4 58s4 61s4 63s4 67s4 69s4 72s4 74s4 78s4
+. 80s4 83s4 85s4 89s4 91s4 94s4 96s4 100s4 102s4 105s4 107s4
+48U14 Reset 48b14 53l8 53t13 55s4 60s4 66s4 71s4 77s4 82s4 88s4 93s4 99s4
+. 104s4
+

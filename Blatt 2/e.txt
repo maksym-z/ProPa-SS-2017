@@ -1,0 +1,8 @@
+10000 4
+0 10
+1 10
+2 10
+3 9
+
+Wir brauchen die Schachteln 3 und 4
+

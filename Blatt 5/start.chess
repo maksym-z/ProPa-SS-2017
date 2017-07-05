@@ -1,0 +1,56 @@
+tsldklst|8
+bbbbbbbb|7
+        |6
+        |5
+        |4
+        |3
+BBBBBBBB|2
+TSLDKLST|1
+--------+
+abcdefgh
+
+Startstellung. Nur die Bauern und die Springer können sich bewegen.
+
+Züge (weiß):
+Ba2-a3
+Ba2-a4
+Bb2-b3
+Bb2-b4
+Bc2-c3
+Bc2-c4
+Bd2-d3
+Bd2-d4
+Be2-e3
+Be2-e4
+Bf2-f3
+Bf2-f4
+Bg2-g3
+Bg2-g4
+Bh2-h3
+Bh2-h4
+Sb1-a3
+Sb1-c3
+Sg1-f3
+Sg1-h3
+
+Züge (schwarz):
+Ba7-a5
+Ba7-a6
+Bb7-b5
+Bb7-b6
+Bc7-c5
+Bc7-c6
+Bd7-d5
+Bd7-d6
+Be7-e5
+Be7-e6
+Bf7-f5
+Bf7-f6
+Bg7-g5
+Bg7-g6
+Bh7-h5
+Bh7-h6
+Sb8-a6
+Sb8-c6
+Sg8-f6
+Sg8-h6

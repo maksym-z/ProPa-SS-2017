@@ -1,0 +1,7 @@
+9999 5
+0 10
+1 10
+2 10
+3 10
+4 10
+Wir brauchen die Schachteln 1 - 4

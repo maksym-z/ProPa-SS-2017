@@ -1,0 +1,124 @@
+V "GNAT Lib v2016"
+M P W=b
+A -gnat05
+A -gnatwa
+A -gnatwl
+A -gnaty3
+A -gnatya
+A -gnatyb
+A -gnatyc
+A -gnatye
+A -gnatyf
+A -gnatyh
+A -gnatyi
+A -gnatyk
+A -gnatyl
+A -gnatym
+A -gnatyn
+A -gnatyp
+A -gnatyr
+A -gnatyt
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_LONG_LONG_INTEGERS
+RV NO_RECURSION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U suv%b			suv.adb			181100ff NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.command_line%s	a-comlin.adb		a-comlin.ali
+W ada.long_long_integer_text_io%s  a-llitio.ads	a-llitio.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.val_int%s	s-valint.adb		s-valint.ali
+W system.val_lli%s	s-vallli.adb		s-vallli.ali
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-comlin.ads		20160516092930 ea62afbc ada.command_line%s
+D a-except.ads		20160516092928 291912d5 ada.exceptions%s
+D a-ioexce.ads		20160516092926 e4a01f64 ada.io_exceptions%s
+D a-llitio.ads		20160516092926 9aecf52b ada.long_long_integer_text_io%s
+D a-stream.ads		20160516092928 119b8fb3 ada.streams%s
+D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
+D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
+D a-tiinio.ads		20160516092928 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
+D suv.adb		20170516210202 50f2afbc suv%b
+D system.ads		20160516092930 2da59038 system%s
+D s-crtl.ads		20160516092926 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092930 54135002 system.exception_table%s
+D s-ficobl.ads		20160516092932 078245e4 system.file_control_block%s
+D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
+D s-secsta.ads		20160516092930 86a2856d system.secondary_stack%s
+D s-soflin.ads		20160516092928 14e1eb6c system.soft_links%s
+D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
+D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
+D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
+D s-valint.ads		20160516092930 48a52a3f system.val_int%s
+D s-vallli.ads		20160516092930 9a24e6a0 system.val_lli%s
+D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 13|1r6 2r6 3r6 12r21 66r7 67r7 68r25 69r25 73r36 80r36 87r39
+. 95r7 96r7 97r7 99r7
+X 2 a-comlin.ads
+38K13*Command_Line 139e21 13|1w10 66r11 69r29
+41V13*Argument_Count{natural} 13|66s24
+48V13*Argument{string} 13|69s42
+X 5 a-llitio.ads
+18K13*Long_Long_Integer_Text_IO[9|46] 13|3w10 96r11
+X 8 a-textio.ads
+49K13*Text_IO 471e16 13|2w10 12r25 67r11 68r29 73r40 80r40 87r43 95r11 97r11
+. 99r11
+52P9*File_Type 13|12r33
+53n23*In_File{53E9} 13|68r37
+92U14*Open 13|67s19
+166U14*New_Line 13|97s19
+242U14*Put 13|95s19
+253V13*Get_Line{string} 13|73s48 80s48 87s51
+263U14*Put_Line 13|99s19
+X 9 a-tiinio.ads
+66U14*Put 13|96s37[5|18]
+X 13 suv.adb
+7U11*Suv 7b11 102l5 102t8
+8I12 Long{long_long_integer} 9r54 13r21 18r21 19r21 25r30 25r47 26r24 27r23
+. 41r53 41r66 42r16 56r26 82r20 89r28 91r31
+9A9 Integer_Array(8I12)<integer> 10r34 75r25
+10P9 XInteger_Array(9A9) 14r21
+12p4 File{8|52P9} 67m25 67r25 73r58 80r58 87r61
+13i4 Stopps{8I12} 61r56 82m10
+14p4 Etappen{10P9} 29r16 30r30 31r48 32r16 33r31 75m10 85r16 89r13 90r46
+. 91r57
+18i4 Gesamtstrecke{8I12} 61r41 90m13 90r30
+19i4 Langste_Etappe{8I12} 61r25 91m13 91r41
+25V13 Can_Cut{boolean} 25b13 25>22 25>36 38l8 38t15 48s13
+25i22 Parts{8I12} 37r31
+25i36 Cut_Size{8I12} 30r45 32r31
+26i7 Current_Prefix{8I12} 30r13 31m13 31r31 33m13
+27i7 Current_Parts{8I12} 34m13 34r30 37r14
+29i11 I{integer} 30r39 31r57 32r25 33r40
+41V13 Partition{8I12} 41b13 41>24 41>33 41>42 49s20 51s20 54l8 54t17 61s14
+41i24 Minimum{8I12} 44r10 45r17 47r31 47r46 49r31
+41i33 Maximum{8I12} 44r20 47r21 51r43
+41i42 Parts{8I12} 48r22 49r48 51r52
+42i7 Middle{8I12} 47m10 48r29 49r40 51r31
+56V13 Solve{8I12} 56b13 62l8 62t13 96s42
+73a10 Line{string} 75r60
+80a10 Line{string} 82r32
+85i11 I{integer} 89r22 90r55 91r66
+87a13 Line{string} 89r40
+

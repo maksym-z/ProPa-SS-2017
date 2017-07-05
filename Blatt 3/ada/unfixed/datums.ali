@@ -1,0 +1,83 @@
+V "GNAT Lib v2016"
+A -gnat05
+A -gnatwa
+A -gnatwl
+A -gnaty3
+A -gnatya
+A -gnatyb
+A -gnatyc
+A -gnatye
+A -gnatyf
+A -gnatyh
+A -gnatyi
+A -gnatyk
+A -gnatyl
+A -gnatym
+A -gnatyn
+A -gnatyp
+A -gnatyr
+A -gnatyt
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_IO
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U datums%b		datums.adb		cc3222cc NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+
+U datums%s		datums.ads		892abc88 EE NE OO PK
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-except.ads		20160516092928 291912d5 ada.exceptions%s
+D a-ioexce.ads		20160516092926 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20160516092928 119b8fb3 ada.streams%s
+D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
+D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
+D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
+D datums.ads		20170516231730 892abc88 datums%s
+D datums.adb		20170516231748 7d756b90 datums%b
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
+D system.ads		20160516092930 2da59038 system%s
+D s-conca2.ads		20160516092930 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20160516092926 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092930 54135002 system.exception_table%s
+D s-ficobl.ads		20160516092932 078245e4 system.file_control_block%s
+D s-imgint.ads		20160516092928 02dbe0c2 system.img_int%s
+D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
+D s-soflin.ads		20160516092928 14e1eb6c system.soft_links%s
+D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
+D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
+D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 9|1r6 9r7 18r10 22r10 29r10 32r10
+X 6 a-textio.ads
+49K13*Text_IO 471e16 9|1w10 9r11 18r14 22r14 29r14 32r14
+263U14*Put_Line 9|9s19 18s22 22s22 29s22 32s22
+X 8 datums.ads
+3K9*Datums 19E9 24l5 24e11 9|4b14 39l5 39t11
+5R9*Datum 6r26 19c9 23e16 9|11r18
+6P9*XDatum(5R9) 10r29 13r31 16r31 9|7r29 14r31 27r31
+10V13*Allocate{6P9} 9|7b13 12l8 12t16
+13U14*Free 13=20 9|14b14 25l8 25t12
+13p20 X{6P9} 9|14b20 15r26 17r11 19r44 20r10 23r59
+16U14*Print 16>21 9|27b14 35l8 35t13
+16p21 X{6P9} 9|27b21 28r11 30r48 33r67
+21i7*Num{positive} 9|19r46 23r61 30r50 33r69
+22b7*Alive{boolean} 9|17r13 20m12 28r13
+X 9 datums.adb
+5i4 Count{natural} 8m7 8r16 10r45 11r25
+

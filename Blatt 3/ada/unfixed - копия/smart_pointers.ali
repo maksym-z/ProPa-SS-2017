@@ -1,0 +1,94 @@
+V "GNAT Lib v2016"
+A -gnat05
+A -gnatwa
+A -gnatwl
+A -gnaty3
+A -gnatya
+A -gnatyb
+A -gnatyc
+A -gnatye
+A -gnatyf
+A -gnatyh
+A -gnatyi
+A -gnatyk
+A -gnatyl
+A -gnatym
+A -gnatyn
+A -gnatyp
+A -gnatyr
+A -gnatyt
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_IO
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_STORAGE_POOLS
+RV SPARK_05
+
+U smart_pointers%b	smart_pointers.adb	ba8f5fee NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U smart_pointers%s	smart_pointers.ads	bb780a3a EE NE OO PK
+W datums%s		datums.adb		datums.ali
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-except.ads		20160516092928 291912d5 ada.exceptions%s
+D a-ioexce.ads		20160516092926 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20160516092928 119b8fb3 ada.streams%s
+D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
+D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
+D a-unccon.ads		20160516092930 f9eb8f06 ada.unchecked_conversion%s
+D datums.ads		20170516231730 892abc88 datums%s
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D i-cstrea.ads		20160516092926 e53d8b8e interfaces.c_streams%s
+D smart_pointers.ads	20170508190608 3252b6b2 smart_pointers%s
+D smart_pointers.adb	20170508190608 b0b01c88 smart_pointers%b
+D system.ads		20160516092930 2da59038 system%s
+D s-crtl.ads		20160516092926 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092930 54135002 system.exception_table%s
+D s-ficobl.ads		20160516092932 078245e4 system.file_control_block%s
+D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
+D s-soflin.ads		20160516092928 14e1eb6c system.soft_links%s
+D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160516092930 09bd3940 system.standard_library%s
+D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
+D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20160516092930 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 12|1r6 23r10
+X 6 a-textio.ads
+49K13*Text_IO 471e16 12|1w10 23r14
+263U14*Put_Line 12|23s22
+X 8 datums.ads
+3K9*Datums 24e11 11|1w6 33r28 12|8r25 16r16 25r10 35r10
+6P9*XDatum(5R9) 11|33r35 12|16r23
+10V13*Allocate{6P9} 12|8s32
+13U14*Free 12|35s17
+16U14*Print 12|25s17
+X 11 smart_pointers.ads
+4K9*Smart_Pointers 30E9 39l5 39e19 12|4b14 54l5 54t19
+5P9*Smart_Pointer 8r33 11r33 14r33 19r21 20r21 23r34 27r28 37c9 12|5r33 11r33
+. 15r29 21r28 29r26 40r21 41r21 50r34
+8U14*Create 8=22 12|5b14 9l8 9t14
+8p22 X{5P9} 12|5b22 6m16 8m7
+11V13*Null_Pointer{5P9} 12|11b13 13l8 13t20
+14V13*Is_Null{boolean} 14>22 12|15b13 19l8 19t15
+14p22 X{5P9} 12|15b22 18r14
+18U14*Assign 19>7 20=7 12|39b14 48l8 48t14 52s7
+19p7 From{5P9} 12|40b7 44r11 45r10 45r34 47r13
+20p7 To{5P9} 12|41b7 43r12 47m7
+23U14*Release 23=23 12|6s7 50b14 53l8 53t15
+23p23 X{5P9} 12|50b23 51r12 52m21
+27U14*Print 27>21 12|21b14 27l8 27t13
+27p21 X{5P9} 12|21b21 22r11 25r24
+30R9 Info 34e17 37r33 12|8r16
+32i10*Reference_Count{integer} 12|18r16 32m9 32r30 34r13 45m15 45r39
+33p10*D{8|6P9} 12|25r26 35m25
+X 12 smart_pointers.adb
+29U14 Dec 29b14 29>19 37l8 37t11 43s7 51s7
+29p19 X{11|5P9} 30r11 32r7 32r28 34r11 35r23
+

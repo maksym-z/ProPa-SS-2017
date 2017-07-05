@@ -1,0 +1,33 @@
+ K k    |8
+   t    |7
+        |6
+        |5
+        |4
+        |3
+        |2
+        |1
+--------+
+abcdefgh
+
+Endspiel-Stellung. Weiß hat nur einen Zug übrig, ohne den König ins Schach zu
+ziehen.
+
+Züge (weiß):
+Kb8-a8
+
+Züge (schwarz):
+Td7-d1
+Td7-d2
+Td7-d3
+Td7-d4
+Td7-d5
+Td7-d6
+Td7-a7
+Td7-b7
+Td7-c7
+Td7-e7
+Td7-f7
+Td7-g7
+Td7-h7
+Kd8-e7
+Kd8-e8

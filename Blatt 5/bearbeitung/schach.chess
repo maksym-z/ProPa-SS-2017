@@ -1,0 +1,21 @@
+t sdk  t|8
+bb  bblb|7
+  L  sb |6
+        |5
+   B    |4
+ S  BD B|3
+BB L BB |2
+T   K  T|1
+--------+
+abcdefgh
+
+Schwarz steht im Schach. Diese Stellung ist nur gültig, wenn schwarz am Zug ist.
+Schwarz muss entweder den König wegbewegen, eine Figur zwischen den König und
+den Läufer stellen oder den Läufer schlagen, damit der schwarze König in der
+resultierenden Stellung nicht mehr im Schach steht.
+
+Züge (schwarz):
+Bb7-c6
+Sf6-d7
+Dd8-d7
+Ke8-f8

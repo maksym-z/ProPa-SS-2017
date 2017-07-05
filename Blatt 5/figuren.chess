@@ -1,0 +1,90 @@
+t       |8
+    l  b|7
+    s   |6
+ D      |5
+    B   |4
+      k |3
+  K     |2
+        |1
+--------+
+abcdefgh
+
+Von jeder Figur mindestens ein Exemplar auf dem Brett; alle Figuren können sich
+ohne Einschränkung bewegen; keine Figur kann geschlagen werden.
+
+Züge (weiß):
+Be4-e5
+Db5-b1
+Db5-f1
+Db5-b2
+Db5-e2
+Db5-b3
+Db5-d3
+Db5-a4
+Db5-b4
+Db5-c4
+Db5-a5
+Db5-c5
+Db5-d5
+Db5-e5
+Db5-f5
+Db5-g5
+Db5-h5
+Db5-a6
+Db5-b6
+Db5-c6
+Db5-b7
+Db5-d7
+Db5-b8
+Db5-e8
+Kc2-b1
+Kc2-c1
+Kc2-d1
+Kc2-b2
+Kc2-d2
+Kc2-b3
+Kc2-c3
+Kc2-d3
+
+Züge (schwarz):
+Bh7-h5
+Bh7-h6
+Se6-d4
+Se6-f4
+Se6-c5
+Se6-g5
+Se6-c7
+Se6-g7
+Se6-d8
+Se6-f8
+Le7-a3
+Le7-b4
+Le7-h4
+Le7-c5
+Le7-g5
+Le7-d6
+Le7-f6
+Le7-d8
+Le7-f8
+Ta8-a1
+Ta8-a2
+Ta8-a3
+Ta8-a4
+Ta8-a5
+Ta8-a6
+Ta8-a7
+Ta8-b8
+Ta8-c8
+Ta8-d8
+Ta8-e8
+Ta8-f8
+Ta8-g8
+Ta8-h8
+Kg3-f2
+Kg3-g2
+Kg3-h2
+Kg3-f3
+Kg3-h3
+Kg3-f4
+Kg3-g4
+Kg3-h4
