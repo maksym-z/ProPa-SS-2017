@@ -11,24 +11,27 @@ data Pflanze =
    
 myplant = Stiel Blatt (Stiel Blatt (Blute Rot))
 shortplant = Blatt
-main = myplant
+testplant = (Stiel (Blute Rot) Blatt)
+-- main = myplant
 
 foldp :: (a -> a -> a) -> (Farbe -> a) -> a -> Pflanze -> a
-foldp _ _ acc fl | trace ("myfun " ++ show acc ++ " " ++ show fl) a = undefined
-foldp f _ acc Blatt = Blatt
-foldp f col acc (Stiel x y) = foldp f col (foldp f col acc x) y
+foldp _ _ acc fl | trace ("folding flower " ++ show fl) False = undefined
+foldp f _ acc Blatt = acc
+foldp f col acc (Stiel x y) = foldp f col (foldp f col acc y) x 
 foldp f col acc (Blute x) = col x
   
 colorblind :: Farbe -> Pflanze
 colorblind f = Blute f
 
-colorvalue :: (Num x) => Farbe -> x
-colorvalue _ = 0
+colorvalue :: (Num a) => Farbe -> a
+colorvalue Rot = 1
+colorvalue x = 0
   
 printplant :: Pflanze -> a -> Pflanze
 printplant p _ = p
 
 
+-- eg foldp printplant colorblind shortplant myplant
 -- foldp f (Stiel y z) = g where
 --  g (Stiel l r) = f l (g r)
 --  g Blatt = y
