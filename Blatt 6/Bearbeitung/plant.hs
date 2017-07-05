@@ -21,9 +21,13 @@ foldp f _ acc Blatt = acc
 foldp f col acc (Stiel x y) = f (foldp f col acc x) (foldp f col acc y)
 -- foldp f col acc (Stiel x y) = foldp f col (foldp f col acc x) y
 foldp f col acc (Blute x) = col x
-  
+
 colorblind :: Farbe -> Integer
 colorblind _ = 0
+
+blattanzahl :: Pflanze -> Integer
+blattanzahl Blatt = 1
+blattanzahl _ = 0
 
 colorvalue :: (Num a) => Farbe -> a
 colorvalue Rot = 2	
