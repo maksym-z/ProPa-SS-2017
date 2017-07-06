@@ -15,19 +15,26 @@ testplant =  Stiel (Stiel (Blute Rot)(Blute Grun)) (Stiel (Blute Blau)(Blute Gel
 aFuckingUglyPlant = Stiel (Stiel (Blute Grun)(Blute Grun)) (Stiel (Blute Grun)(Blute Grun)) -- apparently, green flowers are from hell
 -- main = myplant
 
+-- Arguments: a binary function f + unary function for color processing + initial value + plant to fold
+-- Output: cumulative output of the binary function f
 foldp :: (a -> a -> a) -> (Farbe -> a) -> a -> Pflanze -> a -- dont forget to rename if this shit ever works
-foldp _ _ acc fl | trace ("folding flower " ++ show fl) False = undefined
+--foldp _ _ acc fl | trace ("folding flower " ++ show fl) False = undefined
 foldp f _ acc Blatt = acc
 foldp f col acc (Stiel x y) = f (foldp f col acc x) (foldp f col acc y)
 -- foldp f col acc (Stiel x y) = foldp f col (foldp f col acc x) y
 foldp f col acc (Blute x) = col x
 
-colorblind :: Farbe -> Integer
+colorblind :: (Num a) => Farbe -> a
 colorblind _ = 0
 
-blattanzahl :: Pflanze -> Integer
+blattanzahl :: Pflanze -> Integer -- does not work
 blattanzahl Blatt = 1
-blattanzahl _ = 0
+blattanzahl x = foldp (+) colorblind 0 x
+
+blutenfarben :: Pflanze -> [Farbe]
+blutenfarben x = foldp (++) g [] x where
+  g :: Farbe -> [Farbe]
+  g n = [n]
 
 colorvalue :: (Num a) => Farbe -> a
 colorvalue Rot = 2	
@@ -43,7 +50,7 @@ colorvalue Grun = -1
 -- colorvalue (Blute n) = g n where
 
 schonheit :: Pflanze -> Integer
-schonheit x = foldp (+) colorvalue 0 x
+schonheit x = (foldp (+) colorvalue 0 x) + (blattanzahl x)
 
 
   
