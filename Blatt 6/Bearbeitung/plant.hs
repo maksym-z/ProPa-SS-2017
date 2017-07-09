@@ -1,5 +1,3 @@
-import Debug.Trace (trace)
-
 data Farbe = Rot | Rosa | Weis | Blau | Lila | Grun | Gelb
   deriving (Show, Eq)
 
@@ -8,58 +6,55 @@ data Pflanze =
    |  Blute Farbe
    |  Stiel Pflanze Pflanze
    deriving (Show, Eq)
-   
+
+-- Aufgabe 6.1.1, eine Pflanze mit zwei Blaettern und einer roten Bluete
 myplant = Stiel Blatt (Stiel Blatt (Blute Rot))
-shortplant = Blatt
-testplant =  Stiel (Stiel (Blute Rot)(Blute Grun)) (Stiel (Blute Blau)(Blute Gelb)) 
-aFuckingUglyPlant = Stiel (Stiel (Blute Grun)(Blute Grun)) (Stiel (Blute Grun)(Blute Grun)) -- apparently, green flowers are from hell
--- main = myplant
 
--- Arguments: a binary function f + unary function for color processing + initial value + plant to fold
--- Output: cumulative output of the binary function f
-foldp :: (a -> a -> a) -> (Farbe -> a) -> a -> Pflanze -> a -- dont forget to rename if this shit ever works
---foldp _ _ acc fl | trace ("folding flower " ++ show fl) False = undefined
-foldp f _ acc Blatt = acc
-foldp f col acc (Stiel x y) = f (foldp f col acc x) (foldp f col acc y)
--- foldp f col acc (Stiel x y) = foldp f col (foldp f col acc x) y
-foldp f col acc (Blute x) = col x
+-- Aufgabe 6.1.2
+fold_pflanze :: (a -> a -> a) -> (Farbe -> a) -> a -> Pflanze -> a
+fold_pflanze f _ a Blatt = a
+fold_pflanze f c a (Stiel x y) = f (fold_pflanze f c a x)
+                                (fold_pflanze f c a y)
+fold_pflanze f c a (Blute x) = c x
 
-colorblind :: (Num a) => Farbe -> a
+-- Dummy function that ignores flower colors
 colorblind _ = 0
 
-blattanzahl :: Pflanze -> Integer -- does not work
+-- Aufgabe 6.1.3
+blattanzahl :: Pflanze -> Integer
 blattanzahl Blatt = 1
-blattanzahl x = foldp (+) colorblind 0 x
+blattanzahl x = fold_pflanze (+) colorblind 1 x
 
+-- Aufgabe 6.1.4
 blutenfarben :: Pflanze -> [Farbe]
-blutenfarben x = foldp (++) g [] x where
-  g :: Farbe -> [Farbe]
+blutenfarben x = fold_pflanze (++) g [] x where
   g n = [n]
 
+-- Aufgabe 6.1.5
 colorvalue :: (Num a) => Farbe -> a
-colorvalue Rot = 2	
-colorvalue Rosa = 3	-- Roses red and roses white
-colorvalue Weis = 5	-- Plucked I for my love's delight
-colorvalue Lila = 10	-- She would none of all my poses,
-colorvalue Blau = 15	-- Bade me gather her blue roses.
+colorvalue Rot = 2 
+colorvalue Rosa = 3   -- Roses red and roses white
+colorvalue Weis = 5   -- Plucked I for my love's delight.
+colorvalue Lila = 10  -- She would none of all my posies,
+colorvalue Blau = 15  -- Bade me gather her blue roses.
 colorvalue Gelb = 0
 colorvalue Grun = -1
-  
--- colorvalue Blatt = 1
--- colorvalue (Stiel _ _) = -2
--- colorvalue (Blute n) = g n where
 
+-- Helper functions for the schonheit function
+totalcolorvalue :: Pflanze -> Integer
+totalcolorvalue x = (fold_pflanze (+) colorvalue 0 x)
+colorblind1 _ = 1
+flowercount x = (fold_pflanze (+) colorblind1 0 x)
+
+--  In a full binary tree with L leaves, there are I = L – 1 internal nodes.
+--  Since there are no empty plants, our trees are always full.
 schonheit :: Pflanze -> Integer
-schonheit x = (foldp (+) colorvalue 0 x) + (blattanzahl x)
+schonheit x = (totalcolorvalue x) + (blattanzahl x) 
+              - 2 * ((blattanzahl x + flowercount x) - 1)
 
+-- Aufgabe 6.1.6
+pinkflower Rosa = True
+pinkflower _ = False
 
-  
-printplant :: Pflanze -> a -> Pflanze
-printplant p _ = p
-
-
--- eg foldp printplant colorblind shortplant myplant
--- foldp f (Stiel y z) = g where
---  g (Stiel l r) = f l (g r)
---  g Blatt = y
---  g (Blute b) = Blute b
+rosabluhend :: Pflanze -> Bool
+rosabluhend x = fold_pflanze (&&) pinkflower True x
