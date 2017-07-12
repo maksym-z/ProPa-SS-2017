@@ -33,10 +33,10 @@ blutenfarben x = fold_pflanze (++) g [] x where
 -- Aufgabe 6.1.5
 colorvalue :: (Num a) => Farbe -> a
 colorvalue Rot = 2 
-colorvalue Rosa = 3   -- Roses red and roses white
-colorvalue Weis = 5   -- Plucked I for my love's delight.
-colorvalue Lila = 10  -- She would none of all my posies,
-colorvalue Blau = 15  -- Bade me gather her blue roses.
+colorvalue Weis = 5  -- Roses red and roses white
+colorvalue Rosa = 3  -- Plucked I for my love's delight.
+colorvalue Lila = 10 -- She would none of all my posies,
+colorvalue Blau = 15 -- Bade me gather her blue roses.
 colorvalue Gelb = 0
 colorvalue Grun = -1
 
